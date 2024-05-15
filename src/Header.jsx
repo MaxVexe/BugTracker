@@ -54,7 +54,7 @@ function Header(){
             </header>
        
             
-            <h1 style={title}>Welcome</h1>
+            <h1 style={title}>Welcome Home</h1>
             </div>
             
         </h1>
