@@ -13,6 +13,7 @@ function Card(props){
         <label>This is the label for Text</label>
         <input value ={test} onChange={handle}/>
         <p>{test}</p>
+        <p> Merge Completed</p>
        </>
     );
 }
