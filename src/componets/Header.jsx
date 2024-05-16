@@ -1,6 +1,3 @@
-import { colors } from "@mui/material"
-
-
 function Header(){
     const buttonStyle = {
         backgroundColor: "#FFDE59",
@@ -14,13 +11,15 @@ function Header(){
         margin: "4px 2px",
         cursor: "pointer",
     }
-
-
     const root = {
         backgroundColor:"#0763A5",
         height: '50vh',
+        top: "0",
         padding: '20px',
+        transform:"translateY(-3%)",
+
         borderRadius: '5px',
+        width : "98.5%",
     }
     const title = {
         fontSize:"125px",
@@ -43,10 +42,10 @@ function Header(){
                 <ul style={ul}>
                     <div style={ulli}>
                     <li style={ulli} > 
-                        <input style ={buttonStyle} type="button" onClick="location.href='/';" value="Home" />
+                         <a style={buttonStyle} href="progress">Home</a>
                     </li>
                     <li style={ulli}> 
-                        <button style={buttonStyle}>Profile</button>
+                        <a style={buttonStyle} href="about">Profile</a>
                     </li>
                     </div>
                 </ul>

@@ -1,5 +1,6 @@
 import Home from "./pages/Home"
 import About from "./pages/About"
+import Progression from "./pages/Progression"
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <Routes>
         <Route path="/" element = {<Home />}></Route>
         <Route path="About" element = {<About />}></Route>
+        <Route path="Progress" element = {<Progression />}></Route>
       </Routes>
     </BrowserRouter>
   

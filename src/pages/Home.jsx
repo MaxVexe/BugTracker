@@ -1,9 +1,14 @@
-import Header from "../Header";
-import Footer from "../Footer";
+import Header from "../componets/Header";
+import Footer from "../componets/Footer";
+import Card from "../componets/Card";
+import AchieveCard from "../componets/AchieveCard"
+
+
+
 function Home(){
     return(<>
         <Header />
-        <Footer />
+        <Card cardCom = {<AchieveCard />}/>
         </>
     )
 }
