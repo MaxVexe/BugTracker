@@ -1,4 +1,4 @@
-function AchieveCard(){
+function AchieveCard(props){
     const boxS = {
         
         background: "Yellow",
@@ -29,7 +29,7 @@ function AchieveCard(){
     return(
         <>
         <button onClick={handleClick} style={boxS}>
-            <h1>Hello</h1>
+            <h1>{props.name}</h1>
         </button>
         </>
     );

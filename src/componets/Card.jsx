@@ -20,7 +20,7 @@ function Card(props){
     }  
     const textColors = {
         fontSize:"45px",
-        color:"#FFDE59",
+        color:"#0763A5",
        }
 
 
@@ -33,7 +33,19 @@ function Card(props){
                 </div>
             </div>
             <div style={{ display: 'inline-block' , margin  :"20px"}}>
-                {props.cardCom}
+            <h1>Bounty Board</h1>
+            <p></p>
+                
+            <ul style={{ display: 'flex', listStyleType: 'none', margin: "20px", padding: "0" }}>
+                <li style={{ marginLeft: "20px" }}>
+                    
+                    {props.cardCom}
+                </li>
+                <li style={{ marginLeft: "20px" }}>
+                    {props.cardCom}
+                </li>
+                </ul>
+                
             </div>
           
 

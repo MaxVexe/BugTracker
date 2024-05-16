@@ -8,7 +8,7 @@ import AchieveCard from "../componets/AchieveCard"
 function Home(){
     return(<>
         <Header />
-        <Card cardCom = {<AchieveCard />}/>
+        <Card cardCom = {<AchieveCard name = "bounty"/>}/>
         </>
     )
 }
