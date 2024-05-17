@@ -3,7 +3,7 @@
 function Card(props){
 
  
-
+    let bountyKey = 0
 
     const box = {
             width: "700px",
@@ -37,11 +37,11 @@ function Card(props){
             <p></p>
                 
             <ul style={{ display: 'flex', listStyleType: 'none', margin: "20px", padding: "0" }}>
-                <li style={{ marginLeft: "20px" }}>
-                    
+                <li  key = {bountyKey += 1} style={{ marginLeft: "20px" }}>
                     {props.cardCom}
+                    
                 </li>
-                <li style={{ marginLeft: "20px" }}>
+                <li key = {bountyKey += 1} style={{ marginLeft: "20px" }}>
                     {props.cardCom}
                 </li>
                 </ul>

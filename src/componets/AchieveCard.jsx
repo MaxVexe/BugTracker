@@ -1,3 +1,6 @@
+import BountyInfo from "./BountyInfo";
+import { useState } from "react";
+
 function AchieveCard(props){
     const boxS = {
         
@@ -9,28 +12,22 @@ function AchieveCard(props){
         textColor:"black",
     }
 
-    const popUp = {
-        position: "fixed",
-        zIndex: "1",
-        left: "0",
-        top: "0",
-        width: "100%",
-        height: "100%",
-        overflow:"auto",
-        backgroundColor: "rgba(0,0,0,0.4)",
-        display: "none",
-    }
+
+    const [bountyInfoVisible,setbountyInfoVisible] = useState(false)
+
 
    function handleClick(){
-        console.log("Temp Give more Detail")
-
+     let change = bountyInfoVisible? false : true
+     setbountyInfoVisible(change)
    }
 
     return(
         <>
         <button onClick={handleClick} style={boxS}>
             <h1>{props.name}</h1>
+
         </button>
+        {bountyInfoVisible && <BountyInfo />}
         </>
     );
 }

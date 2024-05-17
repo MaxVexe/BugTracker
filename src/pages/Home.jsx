@@ -9,6 +9,7 @@ function Home(){
     return(<>
         <Header />
         <Card cardCom = {<AchieveCard name = "bounty"/>}/>
+        
         </>
     )
 }
