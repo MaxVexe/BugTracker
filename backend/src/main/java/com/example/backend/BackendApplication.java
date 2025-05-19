@@ -15,7 +15,7 @@ public class BackendApplication {
 		SpringApplication.run(BackendApplication.class, args);
 	}
 
-	@RequestMapping("Example")
+	@RequestMapping("/api/v1/example")
 	public String Example() {
 		return "Hello World!!";
 	}
